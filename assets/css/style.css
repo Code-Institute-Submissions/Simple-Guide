@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Montserrat:100,200,300,400,500,600,700&display=swap');
 
 
-/*---------------------Header*/
-
 *{
   margin: 0;
   padding: 0;
   border: 0:
 }
 
+/*---------------------Header*/
+
 .header-bg-color {
-    background-color: lightblue;
+    background-color: rgb(14, 52, 65);
     margin: 0px;
 }
 
 #logo {
     float: left; 
-    margin: 0px;
+    margin-left: 20px;
 
 }
 
@@ -24,14 +24,17 @@
     float: right;
     list-style: none;
     padding-top: 10px;
-    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    font-weight: 400px;
 }
 
 #menu li a{
     text-decoration: none;
-    color: orangered;
+    color: rgb(189, 158, 24);
     padding: 20px;
     text-align: center;
+   
     
 }
 
@@ -46,6 +49,44 @@ h2{
 
 /*---------------------Footer*/
 
+.footer-bg-color{
+    background-color: rgb(11, 64, 82);
+}
+
+
+.copyright {
+    float: left;
+    color: orange;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#social li{
+    float: right;
+    list-style: none;
+    margin-right: 5px;
+}
+
+#social p{
+    float: right;
+    padding-top: 10px;
+    color: white;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+}
+
+#social i{
+    padding: 5px;
+    font-size: 150%;
+    color: #fff;
+    position: relative;
+}
+
+
 /*---------------------Responsive Sizing*/
 
 @media screen and (max-width: 1393px){
@@ -59,11 +100,3 @@ h2{
 }
 
 @media screen and (max-width: 800px){
-#menu {
-    clear: left;
-    float: left;
-    margin-left: 30px;
-    margin-bottom: 20px;
-    line-height: 25px;
-  } 
-}
