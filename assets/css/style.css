@@ -47,6 +47,9 @@ h2{
 
 }
 
+/*---------------------Hero Image*/
+
+
 /*---------------------Footer*/
 
 .footer-bg-color{
@@ -99,4 +102,18 @@ h2{
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 546px){
+    #menu {
+        text-align: center;
+        float: left;
+        line-height: 25px; 
+        } 
+
+    #menu li a{
+        color: rgb(14, 52, 65);
+        } 
+    
+    .conent-to-hide{
+        display: none;
+    }
+}
