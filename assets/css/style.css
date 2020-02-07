@@ -34,6 +34,7 @@
     color: rgb(189, 158, 24);
     padding: 20px;
     text-align: center;
+    font-size: 120%;
    
     
 }
@@ -44,11 +45,31 @@ h2{
     letter-spacing: 2px;
     font-weight: 400;
     color: orange;
+    font-size: 200%;
+    padding-top: 7px;
 
 }
 
 /*---------------------Hero Image*/
 
+#hero-image{
+    width: 100%;
+    background: url("../images/hero-plane.jpg") no-repeat center center;
+    height: 600px;
+}
+#cover-quote {
+    font-size: 130%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    font-size: 140%;
+    color: rgb(14, 52, 65);
+    padding-top: 60px;
+
+    
+}
 
 /*---------------------Footer*/
 
@@ -63,19 +84,21 @@ h2{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-left: 20px;
 }
 
 #social li{
     float: right;
     list-style: none;
-    margin-right: 5px;
+    margin-right: 10px;
+    padding-top: 10px;
+    
 }
 
 #social p{
     float: right;
-    padding-top: 10px;
+    padding-top: 20px;
     color: white;
     padding-right: 20px;
     font-family: 'Montserrat', sans-serif;
