@@ -58,7 +58,6 @@ h2{
     height: 600px;
 }
 #cover-quote {
-    font-size: 130%;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
@@ -70,6 +69,44 @@ h2{
 
     
 }
+
+/*---------------------Destinations*/
+
+/*#destination-bg-color{
+    background-color: rgba(255, 208, 0, 0.747); 
+}
+*/
+#where-to-heading{
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(14, 52, 65);
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding-top: 30px;
+
+}
+
+#destination{
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-family:'Poppins', sans-serif;
+    font-weight:500;
+    color: rgb(14, 52, 65);
+
+
+}
+
 
 /*---------------------Footer*/
 
@@ -136,7 +173,7 @@ h2{
         color: rgb(14, 52, 65);
         } 
     
-    .conent-to-hide{
+    .content-to-hide{
         display: none;
     }
 }
