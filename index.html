@@ -31,28 +31,79 @@
         </div>
     </section>
     <section>
-        <div id="destination-container" style="height:600px">
+        <div id="destination-container" style="height:800px">
             <h3 id="where-to-heading">Where do you want to go?</h3>
-                <div class="row" id="destination-menu">
+                <div class="row" id="destination-tab">
                     <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, 'Prague')">
-                                <img src="assets/images/prague-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
+                            <button class="tablinks column"  onclick="openCity(event, 'Prague')" >
+                                <img src="assets/images/prague-menu.jpg" alt="Charle's Bridge, Prague" class="destination-img">
                                 <h3 id="destination">Prague</h3>
                             </button>
-                            <button class="tablinks" onclick="openCity(event, 'Dublin')">
+                            <button class="tablinks column" onclick="openCity(event, 'Dublin')">
                                 <img src="assets/images/dublin-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
                                 <h3 id="destination">Dublin</h3>
                             </button> 
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">
-                                <img src="assets/images/paris-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
+                            <button class="tablinks column" onclick="openCity(event, 'Paris')">
+                                <img src="assets/images/paris-menu.jpg" alt="City view, Paris" class="destination-img">
                                 <h3 id="destination">Paris</h3>
-                            </button>
-                           
+                            </button>    
                     </div>          
                 </div>
+
+                <div id="Prague" class="tabcontent active" id="defaultOpen">
+                                <h3 id="where-to-heading" style="font-size:130%"><i>What do you want to do?</i></h3>
+                                <ul id="what2do">
+                                    <li class="column"> 
+                                        <h4>Eat <i class="fas fa-utensils"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                    <li class="column">
+                                        <h4>See <i class="fas fa-eye"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                    <li class="column">
+                                        <h4>Events <i class="fas fa-calendar-week"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                </ul>
+                </div>
+                <div id="Dublin" class="tabcontent">
+                     <h3 id="where-to-heading" style="font-size:130%"><i>What do you want to do?</i></h3>
+                                <ul id="what2do">
+                                    <li class="column"> 
+                                        <h4>Eat <i class="fas fa-utensils"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                    <li class="column">
+                                        <h4>See <i class="fas fa-eye"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                    <li class="column">
+                                        <h4>Events <i class="fas fa-calendar-week"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                </ul>
+                </div>
+                <div id="Paris" class="tabcontent">
+                     <h3 id="where-to-heading" style="font-size:130%"><i>What do you want to do?</i></h3>
+                                <ul id="what2do">
+                                    <li class="column"> 
+                                        <h4>Eat <i class="fas fa-utensils"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                    <li class="column">
+                                        <h4>See <i class="fas fa-eye"></i></h4>
+                                        <p>Type something here</p>
+                                    </li>
+                                    <li class="column">
+                                        <h4>Events <i class="fas fa-calendar-week"></i></h4>
+                                        <p>Type something here!</p>
+                                    </li>
+                                </ul>
+                </div>
+
         </div> 
     </section>
-    <section>What do you want to see?</section>
     <footer class="footer-bg-color" style="height:50px">
         <div class="copyright">Copyright 2020</div>
         <div id="social">
@@ -81,6 +132,22 @@
           </div>
         
     </footer>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
     
 </body>
 </html>

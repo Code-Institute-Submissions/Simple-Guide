@@ -72,15 +72,16 @@ h2{
 
 /*---------------------Destinations*/
 
-/*#destination-bg-color{
-    background-color: rgba(255, 208, 0, 0.747); 
+#destination-container{
+    background-color: rgba(255, 208, 0, 0.4); 
 }
-*/
+
 #where-to-heading{
     padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 120%;
+    font-size: 140%;
     letter-spacing: 1px;
     font-weight: 500;
     text-transform: uppercase;
@@ -107,15 +108,34 @@ h2{
 
 }
 
-.dropdown {
-    position: relative;
+/*---------------------Tab Content Style*/
+
+
+.tab {
+  overflow: hidden;
 }
 
-.dropbtn {
-    position: relative;
+.tabcontent {
+  display: none;
 }
-.drop-conent {
-    position:absolute;
+
+.tabcontent.active {
+  display: block;
+}
+
+#what2do li {
+    list-style: none;
+    text-align: center;
+    color: rgb(14, 52, 65);
+}
+
+h4 {
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 
 /*---------------------Footer*/
