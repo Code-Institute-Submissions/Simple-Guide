@@ -107,6 +107,16 @@ h2{
 
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    position: relative;
+}
+.drop-conent {
+    position:absolute;
+}
 
 /*---------------------Footer*/
 

@@ -31,20 +31,26 @@
         </div>
     </section>
     <section>
-        <div id="destination-bg-color" style="height:600px">
+        <div id="destination-container" style="height:600px">
             <h3 id="where-to-heading">Where do you want to go?</h3>
-                <div class="row">
-                    <div class="column">
-                        <h3 id="destination">Dublin</h3>
-                    </div>
-                    <div class="column">
-                        <h3 id="destination">Paris</h3>
-                    </div>
-                    <div class="column">
-                        <h3 id="destination">Prague</h3>
-                    </div>
+                <div class="row" id="destination-menu">
+                    <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'Prague')">
+                                <img src="assets/images/prague-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
+                                <h3 id="destination">Prague</h3>
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'Dublin')">
+                                <img src="assets/images/dublin-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
+                                <h3 id="destination">Dublin</h3>
+                            </button> 
+                            <button class="tablinks" onclick="openCity(event, 'Paris')">
+                                <img src="assets/images/paris-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
+                                <h3 id="destination">Paris</h3>
+                            </button>
+                           
+                    </div>          
                 </div>
-        </div>
+        </div> 
     </section>
     <section>What do you want to see?</section>
     <footer class="footer-bg-color" style="height:50px">
