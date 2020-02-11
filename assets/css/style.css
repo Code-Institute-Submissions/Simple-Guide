@@ -86,6 +86,7 @@ h2{
     font-size: 140%;
     color: rgb(14, 52, 65);
     padding-top: 60px;
+    text-shadow: 4px 4px 8px #fff;
 
     
 }
@@ -103,6 +104,7 @@ h2{
     text-transform: uppercase;
     color: rgb(14, 52, 65);
     background-color: #fccc2d;
+    text-shadow: 4px 4px 8px #fff;
 
 }
 
@@ -152,6 +154,7 @@ h2{
   border-left: none;
   height: 260px;
   background-color: #f5ecda;
+  padding-top: 80px;
 }
 /*---------------------Tab Content Styling*/
 
@@ -213,6 +216,60 @@ h4 {
 
 
 /*---------------------Newsletter Form*/
+
+form {
+  
+  font-family: Arial;
+  clear: both;
+  
+}
+
+#newsletter {
+  padding: 20px;
+  background: url("../images/newsletter bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.container h3{
+    
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(14, 52, 65);
+    text-shadow: 4px 4px 8px #fff;
+
+}
+input[type=text], input[type=submit] {
+  padding: 14px;
+  margin: 7px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border: none;
+}
+
+input[type=text] {
+    width: 80%;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 20%;
+  float:right;
+  position: relative;
+  margin-bottom: 40px;
+  padding-right: 0;
+}
+
+input[type=text],input[type=submit]:hover {
+   opacity: 0.8;
+}
+
 
 /*---------------------Footer*/
 
@@ -312,6 +369,11 @@ h4 {
     
     .tabcontent{
         height: 180px;
+        padding-top: 0;
+    }
+
+    .container h3{
+        font-size: 100%;
     }
    
 }

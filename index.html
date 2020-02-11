@@ -33,44 +33,62 @@
         </div>
     </section>
 
-    <section id="destination-container" style="height:365px">
-        <h3 id="where-to-heading"><i>Where do you want to go?</i></h3>
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Prague')" id="defaultOpen">
-                    <h3 id="destination">Prague</h3>
-                </button>
-                <button class="tablinks" onclick="openCity(event, 'Dublin')">
-                    <h3 id="destination">Dublin</h3>
-                </button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">
-                    <h3 id="destination">Paris</h3>
-                </button>
+    <section id="where-to">
+        <div id="where-to">
+            <h3 id="where-to-heading"><i>Where do you want to go?</i></h3>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Prague')" id="defaultOpen">
+                        <h3 id="destination">Prague</h3>
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'Dublin')">
+                        <h3 id="destination">Dublin</h3>
+                    </button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">
+                        <h3 id="destination">Paris</h3>
+                    </button>
+                </div>
+
+            <div id="Prague" class="tabcontent">
+                <h3>Prague</h3>
+                <p>Prague is the capital city of Czech Republic, with a population of 1.3 million. 
+                It is a city rich in history and culture, from food to music to architecture.
+                </p>
+                <a href="#">Lets Visit</a>
             </div>
 
-        <div id="Prague" class="tabcontent">
-            <h3>Prague</h3>
-            <p>Prague is the capital city of Czech Republic, with a population of 1.3 million. 
-            It is a city rich in history and culture, from food to music to architecture.
-            </p>
-            <a href="#">Lets Visit</a>
-        </div>
+            <div id="Dublin" class="tabcontent">
+                <h3>Dublin</h3>
+                <p>Dublin is the capital city of Ireland, with a population of almost 2 million.
+                Dublin has many landmarks and monuments dating back hundreds of years.
+                </p>
+                <a href="#">Lets Visit</a>
+            </div>
 
-        <div id="Dublin" class="tabcontent">
-            <h3>Dublin</h3>
-            <p>Dublin is the capital city of Ireland, with a population of almost 2 million.
-            Dublin has many landmarks and monuments dating back hundreds of years.
-            </p>
-            <a href="#">Lets Visit</a>
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital city of France, with a population of 2.1 million.
+                Paris is one of Europes centres for fashion, science, commerce and art.
+                </p>
+                <a href="#">Lets Visit</a>
+            </div>
         </div>
+    </section>
 
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital city of France, with a population of 2.1 million.
-            Paris is one of Europes centres for fashion, science, commerce and art.
-            </p>
-            <a href="#">Lets Visit</a>
-        </div>
-</section>
+    <section id="newsletter">
+        <form action="action_page.php" class="form">
+            <div class="container">
+                <h3><i>Subscribe to our newsletter</i></h3>
+                <p>For many more unforgetable adventures!</p>
+            </div>
+
+            <div class="container column2">
+                <input type="text" class="email" placeholder="Email address" name="mail" required>
+                <input type="submit" value="Subscribe">
+            </div>
+
+          
+            </form>
+    </section>   
    <!-- <section style="height:300px">
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'Prague')" id="defaultOpen">
