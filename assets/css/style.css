@@ -107,13 +107,14 @@ h2{
 }
 
 #destination{
-    text-align: center;
+    text-align: left;
     text-transform:uppercase;
     letter-spacing: 4px;
     font-size: 30px;
     font-family:'Poppins', sans-serif;
     font-weight:500;
     color: rgb(14, 52, 65);
+    padding-left: 10%;
 }
 
 /*---------------------Tab Style*/
@@ -152,7 +153,37 @@ h2{
   height: 260px;
   background-color: #f5ecda;
 }
+/*---------------------Tab Content Styling*/
 
+.tabcontent p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    color: rgb(14, 52, 65);
+
+}
+
+.tabcontent h3 {
+    padding-left: 10%;
+    color: rgb(14, 52, 65);
+    font-family:'Poppins', sans-serif;
+    text-transform: uppercase;
+
+
+}
+
+.tabcontent a{
+    float: right;
+    text-decoration: none;
+    margin-right: 10%;
+    text-transform: uppercase;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    color: orange;
+
+}
 /*---------------------Things to Do*/
 #what2do li {
     list-style: none;
@@ -177,17 +208,7 @@ h4 {
     font-size: 20px;
 }
 
-#what2do li a{
-    float: right;
-    text-decoration: none;
-    padding-top: 20px;
-    text-transform: uppercase;
-    font-family:'Poppins', sans-serif;
-    font-weight: 500;
-    color: orange;
 
-
-}
 
 
 
@@ -252,6 +273,8 @@ h4 {
 
 
 @media screen and (max-width: 546px){
+
+
     #menu {
         text-align: center;
         float: left;
@@ -280,6 +303,7 @@ h4 {
         font-size: 100%;
         letter-spacing: 1px;
         font-weight: 600;
+        padding-left:0;
     }
  
     .tab{
