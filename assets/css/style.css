@@ -272,7 +272,22 @@ h4 {
         margin-left: 5%;
         }
 
- 
+    #where-to-heading {
+        font-size: 100%;
+    }
 
+    #destination {
+        font-size: 100%;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+ 
+    .tab{
+        height: 150px;
+    }
+    
+    .tabcontent{
+        height: 180px;
+    }
    
 }
