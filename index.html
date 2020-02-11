@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/a65927cba6.js" crossorigin="anonymous"></script>
+    <link rel="function" href="function.js">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Travel Guide</title>
 </head>
 <body>
+
    <header class="header-bg-color" style="height:60px">
             <a href="index.html">
                 <h2 id="logo">Travel Smart <i class="fas fa-globe-europe"></i></h2>
@@ -16,7 +18,7 @@
             <nav>
             <ul id="menu">
                 <li>  
-                <a href="#">Destinations</a>
+                <a href="#where-to-heading">Destinations</a>
                 </li>
                 <li>
                 <a href="index.html">Home</a> 
@@ -30,80 +32,164 @@
             <h3 id="cover-quote" class="content-to-hide"><i>Travel tips for those searching for an unforgetable experience!</i></h3>
         </div>
     </section>
-    <section>
-        <div id="destination-container" style="height:1000px">
+
+    <section style="height:365px">
+        <h3 id="where-to-heading"><i>Where do you want to go?</i></h3>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Prague')" id="defaultOpen">
+                    <h3 id="destination">Prague</h3>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Dublin')">
+                    <h3 id="destination">Dublin</h3>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">
+                    <h3 id="destination">Paris</h3>
+                </button>
+            </div>
+
+        <div id="Prague" class="tabcontent">
+            <h3>Prague</h3>
+            <p>Type something here</p>
+        </div>
+
+        <div id="Dublin" class="tabcontent">
+            <h3>Dublin</h3>
+            <p>Type something here</p> 
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Type something here</p>
+        </div>
+</section>
+   <!-- <section style="height:300px">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Prague')" id="defaultOpen">
+                <h3 id="destination">Prague</h3>
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Dublin')">
+                <h3 id="destination">Dublin</h3>
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">
+                <h3 id="destination">Paris</h3>
+            </button>
+        </div>
+
+            <div id="Prague" class="tabcontent active">
+                <h3>Prague</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Dublin" class="tabcontent">
+                <h3>Dublin</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </section>
+    
+    <section id="destination-container">
             <h3 id="where-to-heading">Where do you want to go?</h3>
                 <div class="row" id="destination-tab">
                     <div class="tab">
                             <button class="tablinks column"  onclick="openCity(event, 'Prague')" >
-                                <img src="assets/images/prague-menu.jpg" alt="Charle's Bridge, Prague" class="destination-img">
+                                <img src="assets/images/prague-menu.jpg" alt="Charle's Bridge, Prague" class="destination-img" style="height:250px; width:350px">
                                 <h3 id="destination">Prague</h3>
                             </button>
                             <button class="tablinks column" onclick="openCity(event, 'Dublin')">
-                                <img src="assets/images/dublin-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img">
+                                <img src="assets/images/dublin-menu.jpg" alt="Ha'penny Bridge, Dublin" class="destination-img" style="height:250px; width:350px">
                                 <h3 id="destination">Dublin</h3>
                             </button> 
                             <button class="tablinks column" onclick="openCity(event, 'Paris')">
-                                <img src="assets/images/paris-menu.jpg" alt="City view, Paris" class="destination-img">
+                                <img src="assets/images/paris-menu.jpg" alt="City view, Paris" class="destination-img" style="height:250px; width:350px">
                                 <h3 id="destination">Paris</h3>
                             </button>    
                     </div>          
                 </div>
 
-                <div id="Prague" class="tabcontent active" id="defaultOpen">
+                <div id="Prague" class="tabcontent active">
                                 <h3 id="where-to-heading" style="font-size:130%"><i>What do you want to do?</i></h3>
+                                <div class="row">
                                 <ul id="what2do">
                                     <li class="column vertical"> 
                                         <h4>Eat <i class="fas fa-utensils"></i></h4>
-                                        <p>Type something here</p>
+                                        <p>Traditional Czech cuisine is very hearty and warming.
+                                        It is full of texture and flavour. You cannot visit Prague and 
+                                        not have goulash. Traditional goulash is braised beef served with 
+                                        dumplings, saurkraut and OF COURSE a side of delicious Czech beer.
+                                        </p>
+                                        <a href="https://www.anadventurousworld.com/what-to-eat-in-prague/" target="_blank">Read More</a>
                                     </li>
                                     <li class="column vertical">
                                         <h4>See <i class="fas fa-eye"></i></h4>
-                                        <p>Type something here</p>
+                                        <p>Prague is filled with Gothic and Renaissance architecture,
+                                        as well as, baraque style churches and bridges. Make sure to 
+                                        explore the unique medieval streets with great attention to the 
+                                        astonishing detail. While roaming through Prague make sure to always 
+                                        LOOK UP!
+                                        </p>
+                                        <a href="https://www.thecrazytourist.com/top-25-things-to-do-in-prague/" target="_blank">Read More</a>
                                     </li>
                                     <li class="column vertical">
                                         <h4>Events <i class="fas fa-calendar-week"></i></h4>
-                                        <p>Type something here</p>
+                                        <p>Prague hosts array of events all year around, from food and drink
+                                        festivals to music and art festivals. Prague is also recognised for the 
+                                        colourful Easter and Christmas markets. It doesn't matter what time of year
+                                        you go visit Prague, something is bound to be happening.</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                 </ul>
+                             </div>   
                 </div>
                 <div id="Dublin" class="tabcontent">
                      <h3 id="where-to-heading" style="font-size:130%"><i>What do you want to do?</i></h3>
+                                <div class="row">
                                 <ul id="what2do">
                                     <li class="column vertical"> 
                                         <h4>Eat <i class="fas fa-utensils"></i></h4>
                                         <p>Type something here</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                     <li class="column vertical">
                                         <h4>See <i class="fas fa-eye"></i></h4>
                                         <p>Type something here</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                     <li class="column vertical">
                                         <h4>Events <i class="fas fa-calendar-week"></i></h4>
                                         <p>Type something here</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                 </ul>
+                                </div>
                 </div>
                 <div id="Paris" class="tabcontent">
                      <h3 id="where-to-heading" style="font-size:130%"><i>What do you want to do?</i></h3>
                                 <ul id="what2do">
+                                <div class="row">
                                     <li class="column vertical"> 
                                         <h4>Eat <i class="fas fa-utensils"></i></h4>
                                         <p>Type something here</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                     <li class="column vertical">
                                         <h4>See <i class="fas fa-eye"></i></h4>
                                         <p>Type something here</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                     <li class="column vertical">
                                         <h4>Events <i class="fas fa-calendar-week"></i></h4>
                                         <p>Type something here!</p>
+                                        <a href="https://www.pragueexperience.com/events/events.asp" target="_blank">Read More</a>
                                     </li>
                                 </ul>
+                                </div>
                 </div>
-
-        </div> 
     </section>
+    -->
     <footer class="footer-bg-color" style="height:50px">
         <div class="copyright">Copyright 2020</div>
         <div id="social">
@@ -132,6 +218,7 @@
           </div>
         
     </footer>
+  
 
 <script>
 function openCity(evt, cityName) {
@@ -147,6 +234,8 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+document.getElementById("defaultOpen").click();
 </script>
     
 </body>

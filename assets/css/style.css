@@ -4,9 +4,29 @@
 *{
   margin: 0;
   padding: 0;
-  border: 0:
+  border: 0;
+  box-sizing: border-box;
 }
 
+/*---------------------Columns
+.column {
+    float: left;
+    padding-top: 30px;
+
+}
+
+.row {
+    column-count: 3;
+    margin-left: 5%;
+    margin-right: 5%;
+    column-gap: 40px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
 /*---------------------Header*/
 
 .header-bg-color {
@@ -70,11 +90,7 @@ h2{
     
 }
 
-/*---------------------Destinations*/
-
-#destination-container{
-    background-color: #fff; 
-}
+/*---------------------Destinations Text Style*/
 
 #where-to-heading{
     padding-top: 40px;
@@ -86,13 +102,7 @@ h2{
     font-weight: 500;
     text-transform: uppercase;
     color: rgb(14, 52, 65);
-
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    padding-top: 30px;
+    background-color: #fccc2d;
 
 }
 
@@ -104,29 +114,58 @@ h2{
     font-family:'Poppins', sans-serif;
     font-weight:500;
     color: rgb(14, 52, 65);
-
-
 }
 
-/*---------------------Tab Content Style*/
-
+/*---------------------Tab Style*/
 
 .tab {
-  overflow: hidden;
+  float: left;
+  border: none;
+  background-color: #f1c462;
+  width: 25%;
+  height: 260px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  padding: 20px 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  margin: 0;
+}
+
+.tab button:hover {
+  background-color: #edddbb;
+}
+
+.tab button.active {
+  background-color: #edddbb;
 }
 
 .tabcontent {
-  display: none;
+  float: left;
+  border: none;
+  width: 75%;
+  border-left: none;
+  height: 260px;
+  background-color: #f5ecda;
 }
 
-.tabcontent.active {
-  display: block;
-}
-
+/*---------------------Things to Do*/
 #what2do li {
     list-style: none;
     text-align: center;
     color: rgb(14, 52, 65);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    display: block;
+    padding-bottom: 60px;
+}
+
+#what2do li p{
+text-align: justify;
 }
 
 h4 {
@@ -138,11 +177,29 @@ h4 {
     font-size: 20px;
 }
 
+#what2do li a{
+    float: right;
+    text-decoration: none;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family:'Poppins', sans-serif;
+    font-weight: 500;
+    color: orange;
+
+
+}
+
+
+
+/*---------------------Newsletter Form*/
+
 /*---------------------Footer*/
 
+
 .footer-bg-color{
-    background-color: rgb(11, 64, 82);
-}
+    background-color: rgb(11, 64, 82); 
+
+}  
 
 
 .copyright {
@@ -188,11 +245,11 @@ h4 {
 
 
 @media screen and (max-width: 704px) {
-   .column.vertical {
-        width: 100%;
-    }
+ .row {
+     column-count: 1;
+ }
 
-}
+
 
 @media screen and (max-width: 546px){
     #menu {
@@ -208,6 +265,14 @@ h4 {
     .content-to-hide{
         display: none;
     }
+
+    #what2do li {
+        padding-bottom: 30px;
+        margin-right: 5%;
+        margin-left: 5%;
+        }
+
+ 
 
    
 }
