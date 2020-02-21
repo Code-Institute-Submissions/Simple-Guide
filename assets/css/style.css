@@ -436,6 +436,11 @@ input[type=text]:hover {
 
 /*---------------------Responsive Sizing*/
 
+@media screen and (max-width: 1590px){
+    body {width: 70%
+    }
+}
+
 @media screen and (max-width: 1045px){
  .row {
      column-count: 1;
@@ -519,4 +524,7 @@ input[type=text]:hover {
     input[type=submit] {
         width: 25%;
     }
+
+    .title-bg {
+        width: 100%;
 }
